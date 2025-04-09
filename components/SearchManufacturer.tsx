@@ -58,7 +58,13 @@ const SearchManufacturer = ({
                   }
                   value={item}
                 >
-                  {({ selected, active }) => (
+                  {({
+                    selected,
+                    active,
+                  }: {
+                    selected: boolean;
+                    active: boolean;
+                  }) => (
                     <>
                       <span
                         className={`block truncate ${
